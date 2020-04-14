@@ -2,6 +2,40 @@
 #include <stdlib.h>
 #include "funciones.h"
 
+int isPrime(int x)
+{
+    int success = 0;
+    int i;
+    int contadorDivisores = 0;
+
+    for( i=x; i > 0; i--) /// SI "i" ES DIVISOR DE X
+    {
+        if(x % i == 0)
+        {
+            contadorDivisores ++;
+        }
+
+    }
+
+    if(contadorDivisores == 2) /// SI X TIENE EXACTAMENTE 2 DIVISORES ENTONCES ES PRIMO
+    {
+        success = 1;
+    }
+
+    return success;
+
+}
+
+int utn_userMenu(char description[])
+{
+    int option;
+
+    printf("%s", description);
+    scanf("%d", &option);
+
+    return option;
+}
+
 /*************************************************************************************************/
 
 int utn_getCaracter(char* pResult, char* message, char* errorMessage, int min, int max, int retries)

@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int isPrime(int);
+
+/** \brief IMPRIME UN MENU ESTANDAR EN LA PANTALLA Y DEVUELVE LA OPCION INGRESADA
+ *
+ * \param char[]
+ * \return int
+ *
+ */
+int utn_userMenu(char[]);
 
 /** \brief SOLICITA UN CARACTER AL USUARIO
  *
