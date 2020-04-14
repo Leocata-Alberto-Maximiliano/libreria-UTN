@@ -190,10 +190,10 @@ int calculateMaximum(int*, int);
  * \return int
  *
  */
-int calculateMinimum(int*, int); ///17
+int calculateMinimum(int*, int);
 
 /*************************************************************************************************************/
 
-
-
+void bubbleSort(int[], int);
+void bubbleSort2(int[], int); ///19
 

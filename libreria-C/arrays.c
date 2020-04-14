@@ -445,4 +445,54 @@ int calculateMinimum(int* array, int lenght)
 
 /************************************************************************************************/
 
+void bubbleSort(int array[], int lenght)
+{
+    int i;
+    int j;
+    int aux;
+
+    for(i=0; i<lenght-1; i++)
+    {
+          for(j=i+1; j<lenght; j++)
+          {
+              if(array[i]==-1 || array[j]==-1)
+              {
+                  continue;
+              }
+              if(array[i] > array[j]) /// CRITERIO DE ORDENAMIENTO
+              {
+                  aux = array[i];
+                  array[i] = array[j];
+                  array[j] = aux;
+
+              }
+          }
+    }
+
+}
+
+/************************************************************************************************/
+
+void bubbleSort2(int array[], int lenght)
+{
+    int i;
+    int j;
+    int aux;
+
+    for(i=0; i<lenght-1; i++)
+    {
+          for(j=i+1; j<lenght; j++)
+          {
+
+              if(array[i]!= -1 && array[j]!= -1 && (array[i] > array[j])) /// CRITERIO DE ORDENAMIENTO
+              {
+                  aux = array[i];
+                  array[i] = array[j];
+                  array[j] = aux;
+
+              }
+          }
+    }
+
+}
 
